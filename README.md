@@ -134,9 +134,12 @@ OutputStreamWriter writer = new OutputStreamWriter(fileOutputStream, StandardCha
 ![Imange text](https://github.com/banber0/expermint_two/blob/main/%E9%80%89%E8%AF%BE%E6%88%90%E5%8A%9F.png)  
 ### **7.退课**  
 ![Imange text](https://github.com/banber0/expermint_two/blob/main/%E9%80%80%E8%AF%BE%E6%88%90%E5%8A%9F.png)
-### **8.课程打印**  
+### **8.课程打印(有乱码)**  
 ![Imange text](https://github.com/banber0/expermint_four/blob/main/%E6%89%93%E5%8D%B0%E9%80%89%E8%AF%BE.png)
 ![Imange text](https://github.com/banber0/expermint_four/blob/main/%E6%89%93%E5%8D%B0%E9%80%89%E8%AF%BE1.png)
+### **9.课程打印(无乱码)**  
+![Imange text](https://github.com/banber0/expermint_four/blob/main/%E6%89%93%E5%8D%B0%E8%AF%BE%E7%A8%8B2.png)
+
 
 ## **感想与体会**
 通过本次实验，我体会到了选课的输入输出，了解到了循环文件的读取，对于文本乱码的问题，在写入文本的时候要进行编码输出文本，这样不会有乱码的出现。在文件操作中可能出现问题，添加了异常处理模块，提高程序稳定性。对于Java有了更深刻的认识，学到很多东西，希望在未来更加努力提升自己的代码能力。
