@@ -105,24 +105,23 @@ ChoiceSubject 类允许学生选择课程，将选课结果写入文件，并提
 
 
 ## **系统运行截图**  
-## **1.主页面**  
+### **1.主页面**  
 ![Image text](https://github.com/banber0/expermint_two/blob/main/%E7%B3%BB%E7%BB%9F%E7%95%8C%E9%9D%A2.png)  
-## **2.登录页面,没有注册则会报错**  
+### **2.登录页面,没有注册则会报错**  
 ![Imange text](https://github.com/banber0/expermint_two/blob/main/%E7%99%BB%E5%BD%95.png)  
-## **3.注册页面,分为学生和教师**  
+### **3.注册页面,分为学生和教师**  
 ![Imange text](https://github.com/banber0/expermint_two/blob/main/%E6%B3%A8%E5%86%8C.png)  
-## **4.注册成功**  
+### **4.注册成功**  
 ![Imange text](https://github.com/banber0/expermint_two/blob/main/%E6%B3%A8%E5%86%8C%E6%88%90%E5%8A%9F.png)  
-## **5.选课**  
+### **5.选课**  
 ![Imange text](https://github.com/banber0/expermint_two/blob/main/%E9%80%89%E8%AF%BE.png)  
-## **6.选课成功**  
+### **6.选课成功**  
 ![Imange text](https://github.com/banber0/expermint_two/blob/main/%E9%80%89%E8%AF%BE%E6%88%90%E5%8A%9F.png)  
-## **7.退课**  
+### **7.退课**  
 ![Imange text](https://github.com/banber0/expermint_two/blob/main/%E9%80%80%E8%AF%BE%E6%88%90%E5%8A%9F.png)
-## **8.课程打印**  
-！[Imange text]
-(https://github.com/banber0/expermint_four/blob/main/%E6%89%93%E5%8D%B0%E9%80%89%E8%AF%BE.png)
-(https://github.com/banber0/expermint_four/blob/main/%E6%89%93%E5%8D%B0%E9%80%89%E8%AF%BE1.png)
+### **8.课程打印**  
+！[Imange text](https://github.com/banber0/expermint_four/blob/main/%E6%89%93%E5%8D%B0%E9%80%89%E8%AF%BE.png)
+！[Imange text](https://github.com/banber0/expermint_four/blob/main/%E6%89%93%E5%8D%B0%E9%80%89%E8%AF%BE1.png)
 
 ## **感想与体会**
 通过本次实验，我体会到了选课的输入输出，了解到了循环文件的读取，对于文本乱码的问题，在写入文本的时候有编码，要进行编码。在文件操作中可能出现问题，添加了异常处理模块，提高程序稳定性。对于Java有了更深刻的认识，学到很多东西，希望在未来更加努力提升自己的代码能力。
