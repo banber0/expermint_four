@@ -55,11 +55,13 @@ ChoiceSubject 类允许学生选择课程，将选课结果写入文件，并提
 2.文件读取FileOperations模块  
 
     import java.io.*;
+    import java.nio.charset.StandardCharsets;
 
     public class FileOperations {
         public static void writeFile(String filename, String data) {
             try {
-                FileWriter writer = new FileWriter(filename, true);
+            FileOutputStream fileOutputStream = new FileOutputStream(filename, true);
+            OutputStreamWriter writer = new OutputStreamWriter(fileOutputStream, StandardCharsets.UTF_8);//指定字符编码
                 writer.write(data + "\n");
                 writer.close();
             } catch (IOException e) {
@@ -71,7 +73,8 @@ ChoiceSubject 类允许学生选择课程，将选课结果写入文件，并提
         public static String readFile(String filename) {
             StringBuilder content = new StringBuilder();
             try {
-                FileReader reader = new FileReader(filename);
+                FileInputStream fileInputStream = new FileInputStream(filename);
+                InputStreamReader reader = new InputStreamReader(fileInputStream, StandardCharsets.UTF_8);//指定字符编码
                 BufferedReader bufferedReader = new BufferedReader(reader);
                 String line;
                 while ((line = bufferedReader.readLine()) != null) {
@@ -84,7 +87,9 @@ ChoiceSubject 类允许学生选择课程，将选课结果写入文件，并提
             return content.toString();//以字符串的形式返回文件内容
         }
     }
-  
+
+对于文本的写入编码问题，使用指定的UTF-8编码：FileOutputStream fileOutputStream = new FileOutputStream(filename, true);
+OutputStreamWriter writer = new OutputStreamWriter(fileOutputStream, StandardCharsets.UTF_8);这样文本会输出出来而不会出现乱码
 
 3.PrintSubjects打印类  
 
@@ -134,6 +139,6 @@ ChoiceSubject 类允许学生选择课程，将选课结果写入文件，并提
 ![Imange text](https://github.com/banber0/expermint_four/blob/main/%E6%89%93%E5%8D%B0%E9%80%89%E8%AF%BE1.png)
 
 ## **感想与体会**
-通过本次实验，我体会到了选课的输入输出，了解到了循环文件的读取，对于文本乱码的问题，在写入文本的时候有编码，要进行编码。在文件操作中可能出现问题，添加了异常处理模块，提高程序稳定性。对于Java有了更深刻的认识，学到很多东西，希望在未来更加努力提升自己的代码能力。
+通过本次实验，我体会到了选课的输入输出，了解到了循环文件的读取，对于文本乱码的问题，在写入文本的时候要进行编码输出文本，这样不会有乱码的出现。在文件操作中可能出现问题，添加了异常处理模块，提高程序稳定性。对于Java有了更深刻的认识，学到很多东西，希望在未来更加努力提升自己的代码能力。
 
 
