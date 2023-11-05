@@ -122,6 +122,7 @@ ChoiceSubject 类允许学生选择课程，将选课结果写入文件，并提
 ## **8.课程打印**  
 ！[Imange text]
 (https://github.com/banber0/expermint_four/blob/main/%E6%89%93%E5%8D%B0%E9%80%89%E8%AF%BE.png)
+(https://github.com/banber0/expermint_four/blob/main/%E6%89%93%E5%8D%B0%E9%80%89%E8%AF%BE1.png)
 
 ## **感想与体会**
 通过本次实验，我体会到了选课的输入输出，了解到了循环文件的读取，对于文本乱码的问题，在写入文本的时候有编码，要进行编码。在文件操作中可能出现问题，添加了异常处理模块，提高程序稳定性。对于Java有了更深刻的认识，学到很多东西，希望在未来更加努力提升自己的代码能力。
