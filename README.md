@@ -1,10 +1,10 @@
 # expermint_four
-## **一实验目的**  
+## **一、实验目的**  
 
 1.把选课结果写入文件保存
 2.掌握继承的使用
 
-## **二业务要求**
+## **二、业务要求**
 
 1.保持实验三的代码和readme版本不变
 
@@ -14,19 +14,19 @@
 
 4.将课程写入文本文件，并从该文件中读取
 
-## **基本要求**  
+## **三、基本要求**  
 
 学生可以注册登录选课退课并打印课程
 
-## **解题思路**   
+## **四、解题思路**   
 
 在实验三上进行改进，使得selected_subjects.txt文件可以解析出来而不出现乱码，并且使得课程输出出来，用FileOperations类来循环读取文件内容，并加入try模块来捕捉异常操作，PrintSubjects类为打印类，并在IndexTest类中加入打印课程按钮，可以将课程打印出来到selected_subjects.txt文本中。
 
-## **流程图**  
+## **五、流程图**  
 ![Imange text](https://github.com/banber0/expermint_two/blob/main/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)  
 
 
-## **关键代码**  
+## **六、关键代码**  
 1.选课模块ChoiceSubject类  
 
     public ChoiceSubject() {
@@ -119,7 +119,7 @@ OutputStreamWriter writer = new OutputStreamWriter(fileOutputStream, StandardCha
 
 
 
-## **系统运行截图**  
+## **七、系统运行截图**  
 ### **1.主页面**  
 ![Image text](https://github.com/banber0/expermint_two/blob/main/%E7%B3%BB%E7%BB%9F%E7%95%8C%E9%9D%A2.png)  
 ### **2.登录页面,没有注册则会报错**  
@@ -141,7 +141,7 @@ OutputStreamWriter writer = new OutputStreamWriter(fileOutputStream, StandardCha
 ![Imange text](https://github.com/banber0/expermint_four/blob/main/%E6%89%93%E5%8D%B0%E8%AF%BE%E7%A8%8B2.png)
 
 
-## **感想与体会**
+## **八、感想与体会**
 通过本次实验，我体会到了选课的输入输出，了解到了循环文件的读取，对于文本乱码的问题，在写入文本的时候要进行编码输出文本，这样不会有乱码的出现。在文件操作中可能出现问题，添加了异常处理模块，提高程序稳定性。对于Java有了更深刻的认识，学到很多东西，希望在未来更加努力提升自己的代码能力。
 
 
